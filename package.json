@@ -1,0 +1,32 @@
+{
+  "name": "langstorage",
+  "version": "0.1.0",
+  "main": "./dist/lib/index.js",
+  "author": "muukii <m@muuki.me>",
+  "bin": {
+    "lang": "./dist/bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muukii/langstorage.js"
+  },
+  "scripts": {
+    "start": "babel src/ -d lib/ && node lib/index.js",
+    "build": "yarn run build:lib && yarn run build:bin",
+    "build:lib": "babel src/lib/ -d dist/lib/",
+    "build:bin": "babel src/bin/ -d dist/bin/",
+    "prepublish": "yarn run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.57.3"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "flow-language-server": "^0.2.3",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.4"
+  }
+}

@@ -1,0 +1,25 @@
+config:
+  - languages:
+      - zh-Hant
+      - ko
+strings:
+  - id: '10'
+    zh-Hant: hoge
+    ko: fuga
+    options:
+      ios_key: foo
+      android_key: boaaa
+  - id: '11'
+    zh-Hant: hoge
+    ko: fuga
+  - id: '12'
+    zh-Hant: hoge
+    ko: fuga
+  - id: '13'
+    zh-Hant: hoge
+    ko: fuga
+  - id: '1000'
+    ko: anono
+    options:
+      android_key: yahoo.com
+      ios_key: google.com
